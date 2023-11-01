@@ -282,7 +282,9 @@ public class AppTest{
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             } catch (IOException e) {
+                json = objectMapper.writeValueAsString(coverageJson);
                 e.printStackTrace();
+                return ResponseEntity.ok(json);
             }
 
         } catch (JsonProcessingException e) {
