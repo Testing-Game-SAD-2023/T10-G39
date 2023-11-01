@@ -304,7 +304,7 @@ const Landing = () => {
         }
         if(!data.robotCoverage){
           alert("Errore robot");
-          setOutputString("ERROR");
+          setOutputString("Errore Robot\n\n" + data.outCompile);
           var decs = [];
           setDecorations(decs);
           setCoverageDisplay(true);
